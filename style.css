@@ -1,0 +1,170 @@
+
+body{
+    font-family: sans-serif;
+    color: aqua;
+    background-color: var(--accent-color); 
+    color: var(--primary-color); 
+}
+
+h1{
+    font-family: bold;
+    font-size: 20px;
+    font-weight: 10px;
+    line-height: 1.5; 
+    color: var(--text-main); 
+
+}
+
+h2{
+    font-family: bold;
+    font-size: 20px;
+    font-weight: 10px;
+    line-height: 1.3;
+}
+
+h3{
+    font-family: bold;
+    font-size: 20px;
+    font-weight: 10px;
+    line-height: 1;
+}
+
+:root {
+  --primary-color: #11ff68; 
+  --accent-color: #d650ea;  
+  --bg-light: #ff0000;     
+  --text-main: #c41818;   
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--bg-light);
+    transition: 1s;
+}
+
+
+button{
+    color: var(--bg-light)
+    
+}
+
+button:hover{
+    color: salmon;
+    background-color: black;
+    transition: 1s;
+    color: bisque;
+    
+}
+
+nav a:hover{
+    background-color: black;
+    color: bisque;
+    text-decoration:dashed;
+}
+
+button:active{
+    transform: scale(0.95);  
+    box-shadow: 10px 12px 10px 12px rgb(122, 122,134)
+}
+
+input{
+    outline: 3px solid var(--primary-color);
+    outline-offset: 1px;
+}
+
+
+article {
+    display: inline-block;  
+    width: 220px;         
+    
+    background-color: #ffffff;
+    border: 2px solid #ddd;    
+    border-radius: 15px;      
+    
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+article img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+
+td:nth-child(odd) article {
+    background-color: #f0f0f0;
+    border-color: var(--primary-color);
+} 
+
+.cart-container:empty {
+  height: 200px;
+  border: 2px;
+  background-color: #f9f9f9;
+}
+
+.cart-container:empty::before {
+  content: "Your cart is currently empty. Start shopping!";
+  color: #a91818;
+}
+
+.price::before {
+  content: "$"; 
+  margin-right: 2px;
+  font-weight: bold;
+}
+
+input:required {
+  border: 2px solid #ff4d4d; 
+  outline: none;
+}
+
+
+input:required:valid {
+  border: 2px solid #4CAF50; 
+  background-color: #f0fff0;
+}
+
+
+input:focus {
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+
+tr td:first-child {
+    font-weight: bold;
+    color: #d32f2f;
+    background-color: #f9f9f9;
+    width: 30%;
+}
+
+.order-history li::marker {
+    content: "🏍️ "; 
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+.order-history li{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+
